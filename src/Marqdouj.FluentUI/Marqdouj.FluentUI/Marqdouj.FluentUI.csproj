@@ -15,9 +15,14 @@
     <Copyright>© Douglas Marquardt. All rights reserved.</Copyright>
     <Description>Helper components based on https://www.fluentui-blazor.net/</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>DMNuGet.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\..\..\DMNuGet.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\..\..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
