@@ -1,6 +1,6 @@
 # Custom FluentUI Components
 - This is a collection of custom FluentUI components and helper classes that I have created for my projects. 
-- A demo of the components can be found [here](https://github.com/marqdouj/BlazorDemo/).
+- A demo of this and all of my NuGet packages can be found [here](https://github.com/marqdouj/BlazorDemo/).
 
 ## Release Notes
 ### 9.0.1
