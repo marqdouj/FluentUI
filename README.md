@@ -2,6 +2,9 @@
 - This is a collection of custom FluentUI components and helper classes that I have created for my projects. 
 - A demo of this and all of my NuGet packages can be found [here](https://github.com/marqdouj/BlazorDemo/).
 
+- ## NuGet Package
+- https://www.nuget.org/packages/Marqdouj.FluentUI/
+- 
 ## Release Notes
 ### 9.0.1
 - Added NuGet pkg icon
