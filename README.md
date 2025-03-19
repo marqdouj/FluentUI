@@ -6,6 +6,9 @@
 - https://www.nuget.org/packages/Marqdouj.FluentUI/
 - 
 ## Release Notes
+### 9.0.2
+- Update NuGet packages
+
 ### 9.0.1
 - Added NuGet pkg icon
  

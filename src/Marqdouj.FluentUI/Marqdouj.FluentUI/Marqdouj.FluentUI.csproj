@@ -4,7 +4,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Version>9.0.1</Version>
+    <Version>9.0.2</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Custom FluentUI Components</Title>
     <PackageProjectUrl>https://github.com/marqdouj/FluentUI</PackageProjectUrl>
@@ -34,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.3" />
     <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components" Version="4.11.6" />
     <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components.Icons" Version="4.11.6" />
   </ItemGroup>
