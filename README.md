@@ -6,6 +6,9 @@
 - https://www.nuget.org/packages/Marqdouj.FluentUI/
 - 
 ## Release Notes
+### 9.0.3
+- Upgrade to Fluent UI 4.11.7
+
 ### 9.0.2
 - Update NuGet packages
 
