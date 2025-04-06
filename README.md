@@ -8,7 +8,7 @@
 
 ## NuGet Package
 - https://www.nuget.org/packages/Marqdouj.FluentUI/
-- 
+
 ## Release Notes
 
 ### 9.0.3
