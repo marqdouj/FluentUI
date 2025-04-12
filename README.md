@@ -11,6 +11,10 @@
 
 ## Release Notes
 
+### 9.0.4
+- Upgrade to Fluent UI 4.11.8
+- Converted Theme properties StorageName and Title to Parameters
+
 ### 9.0.3
 - Upgrade to Fluent UI 4.11.7
 

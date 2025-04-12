@@ -1,17 +1,23 @@
 ﻿<FluentDesignTheme @bind-Mode="@Mode"
                    @bind-OfficeColor="@OfficeColor"
                    OnLoaded="@OnLoaded"
-                   StorageName="theme" />
+                   StorageName="@StorageName" />
 
 <FluentButton Appearance="Appearance.Accent"
               IconStart="@(new Icons.Regular.Size20.DarkTheme())"
               OnClick="@SwitchTheme"
-              Title="Theme" />
+              Title="@Title" />
 
 @code {
     public DesignThemeModes Mode { get; set; }
 
     public OfficeColor? OfficeColor { get; set; }
+
+    [Parameter]
+    public string StorageName { get; set; } = "theme";
+
+    [Parameter]
+    public string Title { get; set; } = "Theme";
 
     private bool _isDark = false;
 
