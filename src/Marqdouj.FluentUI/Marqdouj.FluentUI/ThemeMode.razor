@@ -1,0 +1,26 @@
+﻿<FluentDesignTheme @bind-Mode="@options.Mode"
+                   @bind-OfficeColor="@options.Color"
+                   StorageName="@options.StorageName" />
+
+<FluentSelect Label="@options.Label"
+              Height="@options.Height"
+              Width="@options.Width"
+              AriaLabel="@options.AriaLabel"
+              Items="@modes"
+              @bind-SelectedOption="@options.Mode" />
+
+@code {
+    private ThemeOptions options = new();
+    private DesignThemeModes[] modes = Enum.GetValues<DesignThemeModes>();
+
+    [Parameter]
+    public ThemeOptions? Options { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        if (Options is null)
+            return;
+
+        options = Options;
+    }
+}

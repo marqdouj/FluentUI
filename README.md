@@ -4,12 +4,19 @@
 
 ## Components
 - **SlideShow**: A custom component for displaying a list of images (i.e. Banner/Carousel).
-- [**ThemeSwitch**](https://www.fluentui-blazor.net/DesignTheme): A custom component for switching between light and dark themes.
+- [**ThemeSwitch**](https://www.fluentui-blazor.net/DesignTheme): A custom component for toggling between light and dark themes.
+- [**ThemeMode**](https://www.fluentui-blazor.net/DesignTheme): A custom component for selecting between system, light, and dark themes.
+- [**ThemeColor**](https://www.fluentui-blazor.net/DesignTheme): A custom component for selecting theme color.
 
 ## NuGet Package
 - https://www.nuget.org/packages/Marqdouj.FluentUI/
 
 ## Release Notes
+
+### 9.1.0
+- Added ThemeColor component
+- Added ThemeMode component
+- Converted ThemeSwitch Appearance and Icon to Parameters
 
 ### 9.0.4
 - Upgrade to Fluent UI 4.11.8

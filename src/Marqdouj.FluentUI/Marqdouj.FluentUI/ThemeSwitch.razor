@@ -3,8 +3,8 @@
                    OnLoaded="@OnLoaded"
                    StorageName="@StorageName" />
 
-<FluentButton Appearance="Appearance.Accent"
-              IconStart="@(new Icons.Regular.Size20.DarkTheme())"
+<FluentButton Appearance="@Appearance"
+              IconStart="@Icon"
               OnClick="@SwitchTheme"
               Title="@Title" />
 
@@ -12,6 +12,12 @@
     public DesignThemeModes Mode { get; set; }
 
     public OfficeColor? OfficeColor { get; set; }
+
+    [Parameter]
+    public Appearance Appearance { get; set; } = Appearance.Accent;
+
+    [Parameter]
+    public Icon Icon { get; set; } = new Icons.Regular.Size20.DarkTheme();
 
     [Parameter]
     public string StorageName { get; set; } = "theme";

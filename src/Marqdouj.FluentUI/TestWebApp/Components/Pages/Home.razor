@@ -4,9 +4,21 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Theme Demo</h1>
+<h1>Theme Controls</h1>
 
 <FluentStack Orientation="Orientation.Vertical">
-    <FluentLabel>Theme Switch (Toggle Light/Dark)</FluentLabel>
-    <ThemeSwitch />
+    <FluentCard AreaRestricted="false">
+        <FluentLabel>Theme Switch (Toggle Light/Dark)</FluentLabel>
+        <ThemeSwitch />
+    </FluentCard>
+
+    <FluentCard AreaRestricted="false">
+        <FluentLabel>Theme Mode (System/Light/Dark)</FluentLabel>
+        <ThemeMode />
+    </FluentCard>
+
+    <FluentCard AreaRestricted="false">
+        <FluentLabel>Theme Color (Office Color)</FluentLabel>
+        <ThemeColor />
+    </FluentCard>
 </FluentStack>
