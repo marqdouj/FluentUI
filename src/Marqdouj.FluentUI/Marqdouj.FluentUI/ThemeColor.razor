@@ -23,9 +23,9 @@
 
 @code {
     private ThemeOptions options = new();
-    private IEnumerable<OfficeColor?> colors = Enum.GetValues<OfficeColor>().Select(i => (OfficeColor?)i);
+    private IEnumerable<OfficeColor?>? colors = Enum.GetValues<OfficeColor>().Select(i => (OfficeColor?)i);
 
-    //Helps prevent flicker of loading/displaying all colors, then resizing to the height value
+    //Helps prevent flicker of loading/displaying all colors before resizing to the Height setting
     private bool loaded;
     private bool notLoaded => !loaded;
 

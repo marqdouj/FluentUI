@@ -7,18 +7,21 @@
 <h1>Theme Controls</h1>
 
 <FluentStack Orientation="Orientation.Vertical">
-    <FluentCard AreaRestricted="false">
+    <FluentCard>
         <FluentLabel>Theme Switch (Toggle Light/Dark)</FluentLabel>
         <ThemeSwitch />
     </FluentCard>
 
     <FluentCard AreaRestricted="false">
-        <FluentLabel>Theme Mode (System/Light/Dark)</FluentLabel>
-        <ThemeMode />
+        <ThemeMode Options="modeOptions" />
     </FluentCard>
 
     <FluentCard AreaRestricted="false">
-        <FluentLabel>Theme Color (Office Color)</FluentLabel>
-        <ThemeColor />
+        <ThemeColor Options="colorOptions" />
     </FluentCard>
 </FluentStack>
+
+@code {
+    private ThemeOptions modeOptions = new() { Label = "Theme Mode (System/Light/Dark)" };
+    private ThemeOptions colorOptions = new() { Label = "Theme Color (Office Color)" };
+}
