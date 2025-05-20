@@ -13,6 +13,10 @@
 
 ## Release Notes
 
+### 10.0.0-preview4
+- Upgrade to .NET 10 Preview 4
+- Upgrade to Fluent UI 4.11.9
+
 ### 10.0.0-preview3
 - Upgrade to .NET 10 Preview 3
 - ThemeColor/ThemeMode: added checks to help prevent flicker before theme is applied
