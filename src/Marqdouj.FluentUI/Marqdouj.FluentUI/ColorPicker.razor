@@ -1,0 +1,74 @@
+﻿<FluentSelect TOption="HtmlColorNameListItem"
+              Id="@id"
+              Items="@names.Items"
+              Value="@Value"
+              ValueChanged="@OnValueChanged"
+              Appearance="@options.Appearance"
+              AriaLabel="@options.AriaLabel"
+              Autofocus="@options.Autofocus"
+              ChangeOnEnterOnly="@options.ChangeOnEnterOnly"
+              Class="@options.Class"
+              Disabled="@options.Disabled"
+              DisplayName="@options.DisplayName"
+              Embedded="@options.Embedded"
+              Height="@options.Height"
+              Immediate="@options.Immediate"
+              ImmediateDelay="@options.ImmediateDelay"
+              Label="@options.Label"
+              Name="@options.Name"
+              Open="@options.Open"
+              OptionText="@(i => i.Name)"
+              OptionValue="@(i => i.Name)"
+              Placeholder="@options.Placeholder"
+              Position="@options.Position"
+              ReadOnly="@options.ReadOnly"
+              Required="@options.Required"
+              Style="@options.Style"
+              Width="@options.Width">
+    <OptionTemplate>
+        <FluentStack>
+            @if (context.Value.HasValue)
+            {
+                <div style="@($"height:1rem;width:1rem;border: solid 1px black;background-color:{context?.Hex ?? "Transparent"};")" />
+            }
+            <FluentLabel>@context?.Name</FluentLabel>
+        </FluentStack>
+    </OptionTemplate>
+</FluentSelect>
+
+@code {
+    private readonly HtmlColorNameCollection names = new(true);
+    private ColorPickerOptions options = new();
+    private string id = Guid.NewGuid().ToCssId();
+
+    [Parameter]
+    public string? Id { get; set; }
+
+    [Parameter]
+    public string? Value { get; set; }
+
+    [Parameter]
+    public ColorPickerOptions? Options { get; set; }
+
+    [Parameter]
+    public EventCallback<string?> ValueChanged { get; set; }
+
+    private async Task OnValueChanged(string? value)
+    {
+        //setting to null resets the list; which causes the 'Placeholder' to appear (if there is one)
+        if (value == "")
+            value = null;
+
+        Value = value;
+        await ValueChanged.InvokeAsync(value);
+    }
+
+    protected override void OnParametersSet()
+    {
+        if (Options != null)
+            options = Options;
+
+        if (!string.IsNullOrWhiteSpace(Id))
+            id = Id;
+    }
+}

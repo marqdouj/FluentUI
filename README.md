@@ -6,12 +6,17 @@
 - https://www.nuget.org/packages/Marqdouj.FluentUI/
 
 ## Components
+- **ColorPicker** A custom component for selecting an HTML Color Name
+  - see my [HTML Common](https://github.com/marqdouj/HTMLCommon) NuGet package.
 - **SlideShow**: A custom component for displaying a list of images (i.e. Banner/Carousel).
 - [**ThemeSwitch**](https://www.fluentui-blazor.net/DesignTheme): A custom component for toggling between light and dark themes.
 - [**ThemeMode**](https://www.fluentui-blazor.net/DesignTheme): A custom component for selecting between system, light, and dark themes.
 - [**ThemeColor**](https://www.fluentui-blazor.net/DesignTheme): A custom component for selecting theme color.
 
 ## Release Notes
+
+### 10.0.0-preview4.1
+- Added `ColorPicker` component
 
 ### 10.0.0-preview4
 - Upgrade to .NET 10 Preview 4

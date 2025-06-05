@@ -1,0 +1,29 @@
+﻿@page "/color-demo"
+@using Marqdouj.FluentUI
+@using Marqdouj.HtmlCommon
+@rendermode InteractiveServer
+
+<FluentLayout>
+    <FluentHeader>Color Picker Example</FluentHeader>
+    <FluentToolbar>
+        <FluentButton OnClick="Reset">Reset</FluentButton>
+    </FluentToolbar>
+    <FluentStack Orientation="Orientation.Vertical">
+        <ColorPicker Options="@colorPickerOptions" @bind-Value="@colorValue" />
+        <FluentLabel>Selected Color: @colorValue</FluentLabel>
+    </FluentStack>
+</FluentLayout>
+
+@code {
+    private string? colorValue;
+    private ColorPickerOptions colorPickerOptions = new ColorPickerOptions
+    {
+        Label = "Select a color",
+        Placeholder = "Choose a color...",
+    };
+
+    private void Reset()
+    {
+        colorValue = null;
+    }
+}
