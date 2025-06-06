@@ -1,27 +1,12 @@
 ﻿@page "/"
-@using Marqdouj.FluentUI
 @rendermode InteractiveServer
 
 <PageTitle>Home</PageTitle>
 
-<h1>Theme Controls</h1>
-
-<FluentStack Orientation="Orientation.Vertical">
-    <FluentCard>
-        <FluentLabel>Theme Switch (Toggle Light/Dark)</FluentLabel>
-        <ThemeSwitch />
-    </FluentCard>
-
-    <FluentCard AreaRestricted="false">
-        <ThemeMode Options="modeOptions" />
-    </FluentCard>
-
-    <FluentCard AreaRestricted="false">
-        <ThemeColor Options="colorOptions" />
-    </FluentCard>
-</FluentStack>
+<FluentLayout>
+    <FluentHeader>Welcome to my FluentUI Demo</FluentHeader>
+</FluentLayout>
 
 @code {
-    private ThemeOptions modeOptions = new() { Label = "Theme Mode (System/Light/Dark)" };
-    private ThemeOptions colorOptions = new() { Label = "Theme Color (Office Color)" };
+
 }
