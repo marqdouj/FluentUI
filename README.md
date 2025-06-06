@@ -2,6 +2,11 @@
 - This is a collection of custom FluentUI components and helper classes that I have created for my projects. 
 - A demo of this and all of my NuGet packages can be found [here](https://github.com/marqdouj/Blazor-Demos/).
 
+# ANNOUNCEMENT
+- The ***CircleImage*** and ***SlideShow*** components do not require the FluentUI. 
+- These components have been added to the [Marqdouj.HtmlComponents](https://www.nuget.org/packages/Marqdouj.HtmlComponents/) NuGet package.
+- That package supports .NET 8.0 and does not rely on the Fluent UI.
+
 ## NuGet Package
 - https://www.nuget.org/packages/Marqdouj.FluentUI/
 
@@ -15,37 +20,39 @@
 - [**ThemeColor**](https://www.fluentui-blazor.net/DesignTheme): A custom component for selecting theme color.
 
 ## Release Notes
+**10.0.0-preview4.3**
+- Added `ANNOUNCEMENT` message to ReadMe
 
-### 10.0.0-preview4.2
+**10.0.0-preview4.2**
 - Added `CircleImage` component
 
-### 10.0.0-preview4.1
+**10.0.0-preview4.1**
 - Added `ColorPicker` component
 
-### 10.0.0-preview4
+**10.0.0-preview4**
 - Upgrade to .NET 10 Preview 4
 - Upgrade to Fluent UI 4.11.9
 
-### 10.0.0-preview3
+**10.0.0-preview3**
 - Upgrade to .NET 10 Preview 3
 - ThemeColor/ThemeMode: added checks to help prevent flicker before theme is applied
 
-### 9.1.0
+**9.1.0**
 - Added ThemeColor component
 - Added ThemeMode component
 - Converted ThemeSwitch Appearance and Icon to Parameters
 
-### 9.0.4
+**9.0.4**
 - Upgrade to Fluent UI 4.11.8
 - Converted Theme properties StorageName and Title to Parameters
 
-### 9.0.3
+**9.0.3**
 - Upgrade to Fluent UI 4.11.7
 
-### 9.0.2
+**9.0.2**
 - Update NuGet packages
 
-### 9.0.1
+**9.0.1**
 - Added NuGet pkg icon
 
-### 1.0.0 - Initial release
+**9.0.0 - Initial release
