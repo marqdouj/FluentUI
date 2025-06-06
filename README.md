@@ -6,6 +6,7 @@
 - https://www.nuget.org/packages/Marqdouj.FluentUI/
 
 ## Components
+- **CircleImage** A custom component for displaying an image(photo) in a circle (i.e. Avatar).
 - **ColorPicker** A custom component for selecting an HTML Color Name
   - see my [HTML Common](https://github.com/marqdouj/HTMLCommon) NuGet package.
 - **SlideShow**: A custom component for displaying a list of images (i.e. Banner/Carousel).
@@ -14,6 +15,9 @@
 - [**ThemeColor**](https://www.fluentui-blazor.net/DesignTheme): A custom component for selecting theme color.
 
 ## Release Notes
+
+### 10.0.0-preview4.2
+- Added `CircleImage` component
 
 ### 10.0.0-preview4.1
 - Added `ColorPicker` component
