@@ -1,11 +1,20 @@
 # Custom FluentUI Components
 - This is a collection of custom FluentUI components and helper classes that I have created for my projects. 
-- A demo of this and all of my NuGet packages can be found [here](https://github.com/marqdouj/Blazor-Demos/).
+- A demo of this and some of my other NuGet packages can be found [here](https://github.com/marqdouj/BlazorSandbox/).
+
+# WARNING
+This package is going to be depreciated and no longer maintained. 
+Please update your projects to use one of the packages mentioned in the announcement below.
 
 # ANNOUNCEMENT
 - The ***CircleImage*** and ***SlideShow*** components do not require the FluentUI. 
-- These components have been added to the [Marqdouj.HtmlComponents](https://www.nuget.org/packages/Marqdouj.HtmlComponents/) NuGet package.
-- That package supports .NET 8.0 and does not rely on the Fluent UI.
+  - These components have been added to the [Marqdouj.HtmlComponents](https://www.nuget.org/packages/Marqdouj.HtmlComponents/) NuGet package.
+  - That package supports .NET 8.0 and does not include the Fluent UI packages.
+
+- The ***Theme*** and ***ColorPicker*** components require the FluentUI. 
+  - These components have been added to the [Marqdouj.HtmlComponents.FluentUI](https://www.nuget.org/packages/Marqdouj.HtmlComponents.FluentUI/) NuGet package.
+  - That package supports .NET 8.0.
+
 
 ## NuGet Package
 - https://www.nuget.org/packages/Marqdouj.FluentUI/
@@ -20,6 +29,9 @@
 - [**ThemeColor**](https://www.fluentui-blazor.net/DesignTheme): A custom component for selecting theme color.
 
 ## Release Notes
+**10.0.0-preview4.5**
+- Added `WARNING` message to ReadMe
+
 **10.0.0-preview4.3**
 - Added `ANNOUNCEMENT` message to ReadMe
 

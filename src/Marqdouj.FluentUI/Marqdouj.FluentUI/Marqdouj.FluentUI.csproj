@@ -4,7 +4,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Version>10.0.0-preview4.3</Version>
+    <Version>10.0.0-preview4.5</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Custom FluentUI Components</Title>
     <PackageProjectUrl>https://github.com/marqdouj/FluentUI</PackageProjectUrl>
@@ -36,8 +36,8 @@
   <ItemGroup>
     <PackageReference Include="Marqdouj.HtmlCommon" Version="8.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.0-preview.4.25258.110" />
-    <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components" Version="4.11.9" />
-    <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components.Icons" Version="4.11.9" />
+    <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components" Version="4.12.0" />
+    <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components.Icons" Version="4.12.0" />
   </ItemGroup>
 
 </Project>
